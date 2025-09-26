@@ -1,30 +1,21 @@
 {
   "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "server/index.ts",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": ["dist/public/**"]
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/server/index.ts"
+      "source": "/api/(.*)",
+      "destination": "/api/index"
     },
     {
-      "src": "/(.*)",
-      "dest": "/server/index.ts"
+      "source": "/(.*)",
+      "destination": "/api/index"
     }
   ],
-  "buildCommand": "npx vite build && npx esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
+  "buildCommand": "npx vite build && npx esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outfile=dist/index.js",
   "outputDirectory": "dist/public",
   "installCommand": "npm ci",
   "framework": null,
   "functions": {
-    "server/index.ts": {
+    "api/index.ts": {
       "maxDuration": 30
     }
   }
