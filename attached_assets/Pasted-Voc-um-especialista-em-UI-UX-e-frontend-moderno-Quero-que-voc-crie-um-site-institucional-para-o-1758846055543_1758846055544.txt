@@ -1,0 +1,108 @@
+Você é um especialista em UI/UX e frontend moderno. Quero que você crie um site institucional para o **SINAPRO PR**, inspirado em referências como:
+- https://www.sinaprosp.org.br/
+- https://www.sinaprosc.com.br/
+- https://www.apple.com
+- https://linear.app
+- https://www.nike.com
+
+### ⚙️ Tecnologias obrigatórias:
+- **Next.js 14** (com App Router)
+- **TailwindCSS** para estilização
+- **Framer Motion** para animações fluidas
+- **Lucide Icons** para ícones leves
+- **ShadCN/UI** para componentes prontos
+- Código limpo, otimizado e responsivo (mobile-first)
+
+---
+
+## 🎨 Objetivo do design:
+- Criar uma **experiência moderna e minimalista**, porém **cativante e profissional**, transmitindo autoridade.
+- Layout **clean**, com muito espaço em branco e **micro animações suaves**.
+- Transições **fluídas entre seções**, nada de animações pesadas.
+- **Dark Mode e Light Mode** automáticos.
+- Design **extremamente responsivo**, adaptando perfeitamente para desktop, tablet e mobile.
+
+---
+
+## 🗂 Estrutura do site
+O site deve ter as seguintes páginas/áreas:
+
+### **1. Homepage**
+Objetivo: Impactar e apresentar o Sinapro.
+- Header fixo com logo + menu (scroll suave)
+- Hero section com animação sutil:
+  - Título principal: "O futuro das agências de propaganda no Paraná"
+  - Botão CTA: "Associe sua agência"
+  - Fundo animado com **Framer Motion**
+- Seção "Quem Somos"
+- Seção com **benefícios e diferenciais** (cards animados)
+- Depoimentos de agências associadas
+- Seção de **notícias recentes** (3 últimas notícias)
+- Footer completo com links e redes sociais
+
+---
+
+### **2. Página de Cadastro/Login (Área Restrita)**
+Objetivo: Criar **acesso para agências associadas**.
+- Tela de login moderna, estilo Apple/Nike
+- Cadastro com:
+  - Nome da agência
+  - CNPJ
+  - Representante
+  - Email
+  - Telefone
+  - Senha
+- Recuperação de senha
+- UX muito fluída, transições suaves.
+
+---
+
+### **3. Área Restrita (Dashboard Básico)**
+Após login, a agência acessa:
+- Banco de talentos (listagem com filtro)
+- Banco de fornecedores
+- Atualizações internas
+
+Layout minimalista, com sidebar animada e páginas fluidas.
+
+---
+
+### **4. Página Institucional**
+- Quem somos
+- Diretoria
+- Estatuto e documentos
+- Contato (formulário integrado via API fake no momento)
+
+---
+
+## 🖼️ Design Guide
+- Paleta de cores moderna:
+  - Primária: `#1E1E1E` (dark) ou `#FFFFFF` (light)
+  - Secundária: `#0F4C81`
+  - Acento: `#F0C419`
+- Fontes: 
+  - Headings: **Poppins** bold
+  - Texto: **Inter** regular
+- Ícones minimalistas (Lucide)
+
+---
+
+## 🎥 Animações
+- Usar **Framer Motion** para:
+  - Fade-in suave ao carregar seções
+  - Cards com hover animado
+  - Transições entre páginas no estilo "smooth"
+  - Microinterações em botões
+
+---
+
+## 🚀 Entregáveis
+- Código Next.js completo
+- Layout 100% responsivo
+- Animações já implementadas
+- Página inicial totalmente funcional
+- Estrutura base para integração posterior com backend
+
+---
+
+Agora gere **todo o código do frontend**, começando pela estrutura do projeto no Next.js com Tailwind e páginas descritas acima.
